@@ -15,8 +15,6 @@ common opt
       async,
       base,
       stm,
-      stm-containers,
-      list-t
 
 executable list
     import:           opt
@@ -29,3 +27,6 @@ executable map
     main-is:          Map.hs
     hs-source-dirs:   app
     default-language: Haskell2010
+    build-depends:
+      stm-containers,
+      list-t
