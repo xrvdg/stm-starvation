@@ -1,0 +1,29 @@
+cabal-version:      3.0
+name:               stm-starvation
+
+version:            0.1.0.0
+maintainer:         Xander van der Goot
+build-type:         Simple
+
+-- Extra doc files to be distributed with the package, such as a CHANGELOG or a README.
+extra-doc-files:    README
+
+common warnings
+    ghc-options: -Wall
+
+
+executable list
+    import:           warnings
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    ghc-options:
+      -Wall -Wpartial-fields -O2 -rtsopts -debug -threaded -Wunused-packages -dcore-lint
+      "-with-rtsopts=-N"
+    build-depends:
+      async,
+      base,
+      stm,
+      stm-containers,
+      list-t
+

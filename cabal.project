@@ -1,4 +1,4 @@
-packages: myfirstapp.cabal
+packages: *.cabal
 with-compiler: /home/xander/ghc/_build/stage1/bin/ghc
 with-hc-pkg: /home/xander/ghc/_build/stage1/bin/ghc-pkg
 allow-newer: text
