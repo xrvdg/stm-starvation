@@ -20,7 +20,12 @@ common opt
 
 executable list
     import:           opt
-    main-is:          Main.hs
+    main-is:          List.hs
     hs-source-dirs:   app
     default-language: Haskell2010
 
+executable container
+    import:           opt
+    main-is:          Container.hs
+    hs-source-dirs:   app
+    default-language: Haskell2010
