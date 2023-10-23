@@ -24,8 +24,8 @@ executable list
     hs-source-dirs:   app
     default-language: Haskell2010
 
-executable container
+executable map
     import:           opt
-    main-is:          Container.hs
+    main-is:          Map.hs
     hs-source-dirs:   app
     default-language: Haskell2010
