@@ -16,12 +16,6 @@ common opt
       base,
       stm,
 
-executable list
-    import:           opt
-    main-is:          List.hs
-    hs-source-dirs:   app
-    default-language: Haskell2010
-
 executable map
     import:           opt
     main-is:          Map.hs
