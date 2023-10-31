@@ -9,7 +9,7 @@ extra-doc-files:    README
 
 common opt
     ghc-options:
-      -Wall -Wpartial-fields -O2 -rtsopts -debug -threaded -Wunused-packages -dcore-lint
+      -Wall -Wpartial-fields -O2 -rtsopts -debug -threaded -Wunused-packages
       "-with-rtsopts=-N"
     build-depends:
       async,
